@@ -1,0 +1,555 @@
+.wrapper-index {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    border: 0%;
+    outline: 0%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 1;
+    font-family: Nunito;
+} 
+
+.images {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    position: absolute;
+    margin-top: -10px;
+    padding: 0;
+    border: 0%;
+    outline: 0%;
+    position: fixed;
+}
+
+#image-one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+#imgone {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    margin-top: -10px;
+}
+
+.image-two {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+#image-left {
+    height: 100%;
+    width: 50%;
+    background-color: green;
+    transform: scale;
+}
+
+#imgleft{
+    width: 100%;
+}
+
+#image-right {
+    height: 100%;
+    width: 50%;
+    background-color: purple;
+    transform: scale;
+}
+
+#imgright{
+    width: 100%;
+}
+    
+#filter {
+    background-color: rgba(0, 174, 239, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    outline: 0%;
+}
+
+.content {
+    height: 100%;
+    margin: 0 auto;
+    z-index: 3;
+    margin-top: 18vh;
+    flex-direction: row;
+}
+
+.content-landing {
+    height: 100%;
+    margin: 0 auto;
+    z-index: 3;
+    margin-top: 18vh;
+    flex-direction: row;
+}
+
+.footer {
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    width: 80%;
+    z-index: 100;
+}
+
+#logo {
+    width: 70px;
+    height: 100%;
+}
+
+.logo-landing {
+    text-align: center;
+    margin-top: -20vh;
+}
+
+#logo-landing {
+    width: 170px;
+    height: 100%;
+    padding-bottom: 2vh;
+}
+
+.share {
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+#share {
+    color: white;
+}
+
+.score {
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+#score {
+    color: white;
+}
+
+.text {
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 100%;
+    min-height: 10vh;
+    margin: 0 auto;
+    padding: 2vh 7vh;
+    font-family: Nunito;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-landing {
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 100%;
+    min-height: 10vh;
+    margin: 0 auto;
+    padding: 2vh 7vh;
+    font-family: Nunito;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    margin-top: -12%;
+    margin-bottom: 6%;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.tweet {
+    font-size: 1.5em;
+    max-width: 100%;
+    color: #FFFFFF;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 4vh;
+}
+
+.tweet-landing {
+    font-size: 1.5em;
+    max-width: 100%;
+    color: #FFFFFF;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6vh;
+    margin-top: 4vh;
+}
+
+.bold {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#time {
+    font-size: 2vh;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+
+.buttons {
+    width: 700px;
+    margin-top: 90vh;
+    display: flex;
+    margin: 0 auto;
+    font-family: Nunito;
+}
+
+.buttonLeft-wrapper {
+    width: 499px;
+    height: 100%;
+}
+
+#buttonLeft {
+    float: right;
+    margin-right: 50px;
+}
+
+#bl {
+    height: 100%;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 1.2em;
+    margin-right: 0;
+    font-weight: 700;
+    font-family: Nunito;
+}
+
+#bl:hover {
+    background-color: white;
+    color: rgb(0, 174, 239);
+}
+
+.buttonRight-wrapper {
+    width: 499px;
+    height: 100%;
+}
+
+#buttonRight {
+    float: left;
+    margin-left: 50px;
+}
+
+#br {
+    height: 100%;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: Nunito;
+}
+
+#br:hover {
+    background-color: white;
+    color: rgb(0, 174, 239);
+}
+
+.button {
+    width: 250px;
+    margin-top: 90vh;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Nunito;
+}
+
+.button-wrapper {
+    width: 499px;
+    height: 100%;
+}
+
+#button-landing {
+    float: center;
+    font-weight: 700;
+}
+
+#b {
+    height: 100%;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 1.2em;
+    margin-right: 0;
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+#b:hover {
+    background-color: white;
+    color: rgb(0, 174, 239);
+} 
+
+@media only screen and (max-width: 1100px) {
+
+    .footer {
+        margin-top: 5vh;
+        max-width: 1000px;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    #logo {
+        width: 70px;
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+/*LANDING*/
+    .images {
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -10px;
+        padding: 0;
+    }
+
+    #image-left {
+        height: 50%;
+        width: 100%;
+        background-color: green;
+        transform: scale;
+    }
+
+    #imgleft{
+        width: 100%;
+    }
+
+    #image-right {
+        height: 50%;
+        width: 100%;
+        background-color: purple;
+        transform: scale;
+    }
+
+    #imgright{
+        width: 100%;
+    }
+/*END LANDING*/
+    
+/*INDEX*/
+    .image-two {
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -10px;
+        padding: 0;
+    }
+/*END INDEX*/
+
+    
+    
+    
+    #header {
+        margin-top: -25%;
+    }
+    
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttonLeft-wrapper {
+        width: 250px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    #buttonLeft {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .buttonRight-wrapper {
+        width: 250px;
+        height: 100%;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    #buttonRight {
+        margin: 0 auto;
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    
+    #header {
+        font-size: 30px;
+        margin-top: -20%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #header {
+        font-size: 30px;
+        margin-top: -60%;
+    }
+    
+    .tweet p {
+        font-size: 21px;
+        color: yellow;
+    }
+    
+    #time p {
+        font-size: 14px;
+    }
+    
+    #bl {
+        font-size: 14px;
+    }
+    
+    #br {
+        font-size: 14px;
+    }
+    
+    .tweet-landing {
+        font-size: 20px;
+    }
+    
+    #b {
+        font-size: 14px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    #logo {
+        width: 70px;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .tweet p {
+        font-size: 25px;
+        color: grey;
+    }
+    
+    #time p {
+        font-size: 11px;
+    }
+    
+    .tweet-landing {
+        font-size: 17px;
+    }
+    
+    .share {
+        width: 70px;
+    }
+
+    #share {
+        font-size: 12px;
+    }
+
+    .score {
+        width: 70px;
+    }
+
+    #score {
+        font-size: 12px;
+    }
+    
+    #header {
+        margin-top: -70%;
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+
+    .tweet {
+        font-size: 20px;
+        color: pink;
+    }
+    
+    #time p {
+        font-size: 9px;
+    }
+    
+    .tweet-landing {
+        font-size: 15px;
+    }
+    
+}
