@@ -20,6 +20,17 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108081414-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108081414-1');
+    </script>
+    
 </head>
 <body>
 
@@ -51,7 +62,7 @@
                 
                 <div class="text-landing">
                     
-                    <div class="tweet-landing">
+                    <div id="tweet">
                         <div class="bold">Who tweeted?</div> 
                         Test your skills in the world of celebrities - play this fun game with tweets from famous people!
                     </div>
@@ -78,22 +89,14 @@
                     </div>
 
                 </div>
+                
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
             
             </div> 
-<!--
-            
-			<div class="buttons">
-                
-				<form action="index.html">
-
-					<input id="start" type="submit" value="Go to thetweetgame!">
-                    
-				</form>
-                
-			</div>
-            
--->
+´
 		</div>
+        
+
         
 	</div>
 

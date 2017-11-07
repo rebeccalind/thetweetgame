@@ -28,12 +28,20 @@
 </head>
     
 <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     
     <div class="wrapper-index">
         
         <div class="images">
         
-            <div id="image-one">
+            <div class="image-one">
                 
                 <img id="imgone"/>
                 
@@ -63,12 +71,12 @@
                         <p>Who tweeted?</p>
                     </div>
 
-                    <div class="tweet-landing">
+                    <div id="tweet">
                         <p>Happy New Year to all, including to my many enemies and those who have fought me and lost so badly they just don't know what to do. Love!</p>
                     </div>
 
                     <div id="time">
-                        <p>Dec 31, 2016</p>
+                        
                     </div>
 
                 </div>
@@ -79,7 +87,7 @@
 
                         <div id="buttonLeft">
 
-                            <button id="bl" onclick="openStuffL();">
+                            <button id="bl" onclick="pressLeftBut()">
                                 <p id="button-left">default</p>
                             </button>
 
@@ -91,20 +99,32 @@
                     
                         <div id="buttonRight">
 
-                            <button id="br" onclick="openStuffR();">
+                            <button id="br" onclick="pressRightBut()">
                                 <p id="button-right">default</p>
                             </button>
 
                         </div>
                         
                     </div>
+                     
+                </div>
+                
+                <div class="buttonnext-wrapper">
+
+                    <div id="buttonnext">
+
+                            <button id="bn" onclick="nextBut();" style="display:none">
+                                <p id="button-next">NEXT</p>
+                            </button>
+
+                    </div>
 
                 </div>
-            
+               
                 <div class="footer">
                      
                     <div class="share">
-                        <p id="share">Share</p>
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                     </div>
                     
                     <div class="logo">
@@ -119,11 +139,65 @@
                 
                 </div>
                 
-            </div> 
+             </div> 
             
         </div>
     
+
+    <div class="end-wrapper" style="display: none">
+        
+        <div id="endResult">
+
+           <div class="logo-landing">
+
+                <a href="index.html">
+
+                    <img id="logo-landing" src="thetweetgamelogo.png"/>
+
+                </a>
+
+            </div>
+
+            <div class="text-landing">
+
+                <div id="tweetS">
+                    
+                    <div class="bold">Your score:</div> 
+                    <p id="tweetScore"></p>
+                    
+                </div>
+
+            </div>
+
+           <div class="button">
+
+                <div class="button-wrapper">
+
+                    <a href="index.html">
+
+                        <div id="button-newgame">
+
+                            <!--JAVASCRIPT-->
+                            <button id="b" onclick="openStuffL();">
+                                <p id="button-playagain">New game</p>
+                            </button>
+
+                        </div>  
+
+                    </a>
+
+                </div>
+
+            </div>
+            
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+        </div>
+        
     </div>
+        
+</div>
+
     
 </body>
 

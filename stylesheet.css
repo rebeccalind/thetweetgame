@@ -9,7 +9,6 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-size: cover;
     z-index: 1;
     font-family: Nunito;
 } 
@@ -25,22 +24,19 @@
     border: 0%;
     outline: 0%;
     position: fixed;
+    overflow: hidden;
 }
 
-#image-one {
-    position: absolute;
+.image-one {
     width: 100%;
     height: 100%;
-    align-content: center;
-    justify-content: center;
+    position: absolute;
     z-index: 3;
 }
 
 #imgone {
     width: 100%;
     height: 100%;
-    background-color: none;
-    margin-top: -10px;
 }
 
 .image-two {
@@ -48,29 +44,38 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    position: absolute;
 }
 
 #image-left {
     height: 100%;
     width: 50%;
-    background-color: green;
-    transform: scale;
+    object-fit: contain;
+    background-color: grey;
 }
 
-#imgleft{
-    width: 100%;
+#imgleft {
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 #image-right {
     height: 100%;
     width: 50%;
-    background-color: purple;
-    transform: scale;
+    object-fit: cover;
+    background-color: lightgrey;
 }
 
 #imgright{
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
     
 #filter {
@@ -82,6 +87,7 @@
     margin: 0%;
     border: 0%;
     outline: 0%;
+    position: fixed;
 }
 
 .content {
@@ -101,6 +107,15 @@
 }
 
 .footer {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-end {
     margin-top: 10vh;
     display: flex;
     flex-wrap: wrap;
@@ -120,9 +135,29 @@
     height: 100%;
 }
 
+.end-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 7%;
+}
+
+#endResult {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+}
+
 .logo-landing {
     text-align: center;
-    margin-top: -20vh;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo-landing {
@@ -139,6 +174,17 @@
 
 #share {
     color: white;
+    width: 60%;
+    height: 60%;
+}
+
+.fb-like {
+    width: 100%;
+    height: 15px;
+    z-index: 2000;
+    background-color: transparent;
+    margin-bottom: 10%;
+    position: absolute;
 }
 
 .score {
@@ -166,10 +212,10 @@
 
 .text-landing {
     background-color: rgba(255, 255, 255, 0);
-    max-width: 100%;
+    max-width: 80%;
     min-height: 10vh;
     margin: 0 auto;
-    padding: 2vh 7vh;
+    padding: 1vh 2vh;
     font-family: Nunito;
     color: #FFFFFF;
     text-align: center;
@@ -184,23 +230,7 @@
     font-weight: 700;
 }
 
-.tweet {
-    font-size: 1.5em;
-    max-width: 100%;
-    color: #FFFFFF;
-    height: 150px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 400;
-    font-family: Nunito;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-    margin-top: 4vh;
-}
-
-.tweet-landing {
+#tweet {
     font-size: 1.5em;
     max-width: 100%;
     color: #FFFFFF;
@@ -226,6 +256,7 @@
     color: #FFFFFF;
     font-weight: 400;
     margin-bottom: 5vh;
+    margin-top: -50px;
 }
 
 .buttons {
@@ -234,16 +265,21 @@
     display: flex;
     margin: 0 auto;
     font-family: Nunito;
+    border: 1px solid green;
+    margin-top: 0%;
 }
 
 .buttonLeft-wrapper {
     width: 499px;
     height: 100%;
+    width: 100%;
 }
 
 #buttonLeft {
     float: right;
     margin-right: 50px;
+    height: 100%;
+    width: 100%;
 }
 
 #bl {
@@ -259,21 +295,25 @@
     margin-right: 0;
     font-weight: 700;
     font-family: Nunito;
+    border-radius: 2px;
 }
 
 #bl:hover {
-    background-color: white;
-    color: rgb(0, 174, 239);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
 }
 
 .buttonRight-wrapper {
     width: 499px;
     height: 100%;
+    width: 100%;
 }
 
 #buttonRight {
     float: left;
     margin-left: 50px;
+    height: 100%;
+    width: 100%;
 }
 
 #br {
@@ -288,11 +328,48 @@
     font-size: 1.2em;
     font-weight: 700;
     font-family: Nunito;
+    border-radius: 2px;
 }
 
 #br:hover {
-    background-color: white;
-    color: rgb(0, 174, 239);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.buttonnext-wrapper {
+    width: 100%;
+    height: 60px;
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#buttonnext {
+    width: 150px;
+    height: 100%;
+}
+
+#bn {
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 0.7vh;
+    padding-right: 0.7vh;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-family: Nunito;
+    border-radius: 2px;
+}
+
+#bn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
 }
 
 .button {
@@ -329,18 +406,28 @@
     margin-right: 0;
     font-family: Nunito;
     font-weight: 700;
+    border-radius: 2px;
 }
 
 #b:hover {
-    background-color: white;
-    color: rgb(0, 174, 239);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
 } 
+
+#button-newgame {
+    float: center;
+    font-weight: 700;
+}
 
 @media only screen and (max-width: 1100px) {
 
+    #imgright {
+        height: auto;
+        width: 100%;
+    }
+    
     .footer {
-        margin-top: 5vh;
-        max-width: 1000px;
+        flex-direction: column;
     }
 
     .logo {
@@ -351,12 +438,17 @@
         width: 70px;
         height: 100%;
     }
+    
+    #time p {
+        font-size: 14px;
+        margin-top: -50px;
+    }
 
 }
 
 @media only screen and (max-width: 750px) {
 
-/*LANDING*/
+
     .images {
         width: 100%;
         height: 100%;
@@ -370,7 +462,7 @@
     #image-left {
         height: 50%;
         width: 100%;
-        background-color: green;
+        background-color: grey;
         transform: scale;
     }
 
@@ -381,16 +473,14 @@
     #image-right {
         height: 50%;
         width: 100%;
-        background-color: purple;
+        background-color: lightgrey;
         transform: scale;
     }
 
     #imgright{
         width: 100%;
     }
-/*END LANDING*/
     
-/*INDEX*/
     .image-two {
         width: 100%;
         height: 100%;
@@ -400,17 +490,14 @@
         margin-top: -10px;
         padding: 0;
     }
-/*END INDEX*/
 
-    
-    
-    
     #header {
         margin-top: -25%;
     }
     
     .buttons {
         width: 100%;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -430,6 +517,8 @@
     #buttonLeft {
         margin: 0 auto;
         float: none;
+        width: 100%;
+        height
     }
 
     .buttonRight-wrapper {
@@ -446,32 +535,30 @@
         margin: 0 auto;
         float: none;
     }
-
-}
-
-@media only screen and (max-width: 700px) {
     
-    #header {
-        font-size: 30px;
-        margin-top: -20%;
+    .buttonnext-wrapper {
+        margin-top: 10px;
     }
     
-}
+    .share {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
 
-@media only screen and (max-width: 500px) {
-    
-    #header {
-        font-size: 30px;
-        margin-top: -60%;
+    #share {
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
     }
-    
-    .tweet p {
-        font-size: 21px;
-        color: yellow;
+
+    .score {
+        width: 70px;
+        height: 100%;
     }
-    
-    #time p {
-        font-size: 14px;
+
+    #score {
+        font-size: 12px;
     }
     
     #bl {
@@ -482,11 +569,37 @@
         font-size: 14px;
     }
     
-    .tweet-landing {
+    #b {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    
+    #header {
+        font-size: 30px;
+        margin-top: -100px;
+    }
+    
+    #time p {
+        font-size: 14px;
+    }
+    
+    #tweet {
         font-size: 20px;
     }
     
-    #b {
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #header {
+        font-size: 30px;
+        margin-top: -100px;
+    }
+    
+    #time p {
         font-size: 14px;
     }
 
@@ -498,57 +611,37 @@
         width: 70px;
         height: 100%;
     }
+    
+    #tweet {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     
-    .tweet p {
-        font-size: 25px;
-        color: grey;
-    }
-    
     #time p {
         font-size: 11px;
-    }
-    
-    .tweet-landing {
-        font-size: 17px;
-    }
-    
-    .share {
-        width: 70px;
-    }
-
-    #share {
-        font-size: 12px;
-    }
-
-    .score {
-        width: 70px;
-    }
-
-    #score {
-        font-size: 12px;
+        margin-top: -10px;
     }
     
     #header {
-        margin-top: -70%;
+        margin-top: -30%;
     }
     
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
 
-    .tweet {
-        font-size: 20px;
-        color: pink;
-    }
     
     #time p {
         font-size: 9px;
     }
     
-    .tweet-landing {
+    #header {
+        margin-top: -40%;
+    }
+    
+    #tweet {
         font-size: 15px;
     }
     
