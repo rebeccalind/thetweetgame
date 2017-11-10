@@ -135,11 +135,12 @@
     height: 100%;
 }
 
-.end-wrapper {
+#end-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
     margin-top: 7%;
+    z-index: 50;
 }
 
 #endResult {
@@ -260,13 +261,12 @@
 }
 
 .buttons {
-    width: 700px;
+       width: 700px;
     margin-top: 90vh;
     display: flex;
     margin: 0 auto;
     font-family: Nunito;
-    border: 1px solid green;
-    margin-top: 0%;
+    margin-top: 0%
 }
 
 .buttonLeft-wrapper {
@@ -276,8 +276,7 @@
 }
 
 #buttonLeft {
-    float: right;
-    margin-right: 50px;
+      margin-left: 50px;
     height: 100%;
     width: 100%;
 }
